@@ -10,8 +10,44 @@
         background-color: #f4f6f8;
         color: #333;
         margin: 0;
-        padding: 40px;
+        padding: 0;
         text-align: center;
+      }
+
+      /* ─── Navigation Bar ─────────────────────────── */
+      nav {
+        background-color: darkolivegreen;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      nav a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #e7b017;
+      }
+
+      /* ─── Content ─────────────────────────── */
+      main {
+        padding: 40px 20px;
       }
 
       img {
@@ -35,7 +71,8 @@
       }
 
       li {
-        background: white;
+        text-decoration: none;
+        background-color: white;
         margin: 8px auto;
         padding: 10px 20px;
         max-width: 300px;
@@ -44,7 +81,8 @@
       }
 
       a {
-        color: #2a7ae2;
+
+        color: #000000;
         text-decoration: none;
         font-weight: 500;
       }
@@ -52,46 +90,72 @@
       a:hover {
         text-decoration: underline;
       }
+
+      footer {
+        background: #000000;
+        color: rgb(243, 241, 241);
+        padding: 20px 0;
+        margin-top: 40px;
+      }
+
+      .contact-bar i {
+        margin: 0 8px;
+      }
     </style>
   </head>
 
   <body>
-    <h1>Hello, I’m PK 👋</h1>
-    <img src="Crazy Profile.jpeg" alt="PK photo" width="180">
+    <!-- ─── Navigation Menu ─────────────────────────── -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#Resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <h2>About Me</h2>
-    <p>I’m from Thailand and currently learning how to build websites.</p>
-    <p>I’m interested in business, content creation, and traveling.</p>
+    <!-- ─── Main Content ─────────────────────────── -->
+    <main>
+      <h1>Hello, I’m PK 👋</h1>
+      <img src="Crazy Profile.jpeg" alt="PK photo" width="180">
 
-    <h2>My industries</h2>
-    <ul>
-      <li>Travel and Tourism</li>
-      <li>Technologies</li>
-      <li>Music</li>
-      <li>Exploring Australia & NZ</li>
-    </ul>
+      <h2 id="about">About Me</h2>
+      <p>I’m from Thailand and currently learning how to build websites.</p>
+      <p>I’m interested in business, content creation, and traveling.</p>
 
-    <h2>Contact</h2>
-    <p>
-      <a href="https://www.instagram.com/ppp_kittipat/" target="_blank">Instagram</a> |
-      <a href="https://www.youtube.com/@pkallgood" target="_blank">YouTube</a>  |
-      <a href="https://www.tiktok.com/" target="_blank">Tiktok</a>
-      <!-- target="_blank"> is mean open the new tab-->
-    </p>
-  </body>
-  <footer>
-        <div class="container">
-             <div class="copyright">
-            <p>&copy; 2025 by PK Property and traveling assets</p>
-            </div>
-        
-            <div class="contact-bar">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-vimeo-v"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </div>
+      <h2 id="industries">My industries</h2>
+      <ul>
+        <li><a href="https://www.story-touring.com/" target="_blank">Travel and Tourism</a></li>
+        <li>Technologies</li>
+        <li>Music</li>
+        <li>Exploring Australia & NZ</li>
+      </ul>
+
+      <h2 id="contact">Contact</h2>
+      <p>
+        <a href="https://www.instagram.com/ppp_kittipat/" target="_blank">Instagram</a> |
+        <a href="https://www.youtube.com/@pkallgood" target="_blank">YouTube</a> |
+        <a href="https://www.tiktok.com/" target="_blank">TikTok</a> |
+        <a href="https://linktr.ee/pkallgood" target="_blank">Linktr.ee</a>
+      </p>
+    </main>
+
+    <!-- ─── Footer ─────────────────────────── -->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          <p>&copy; 2025 by PK Property and Traveling Assets</p>
         </div>
+        <div class="contact-bar">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-vimeo-v"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
     </footer>
+  </body>
 </html>
